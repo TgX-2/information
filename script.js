@@ -48,9 +48,13 @@ function showPage(pageId) {
     }, 500);
 }
 
-if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-    alert("Trang này chỉ dành cho máy tính");
+function isMobile() {
+  const regex = /Mobi|Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i;
+  return regex.test(navigator.userAgent);
+}
+
+if (isMobile()) {
+  console.log("Trang này chỉ dành cho máy tính");
 } else {
-  alert("dmm");
-  
+  console.log("đmm");
 }

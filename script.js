@@ -54,7 +54,7 @@ function isMobile() {
 }
 
 if (isMobile()) {
-  console.log("Trang này chỉ dành cho máy tính");
+  alert("Trang này chỉ dành cho máy tính!");
 } else {
-  console.log("đmm");
+  alert("Hi!");
 }

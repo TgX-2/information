@@ -49,5 +49,8 @@ function showPage(pageId) {
 }
 
 if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-  alert("Trang này chỉ dành cho máy tính!");
+    alert("Trang này chỉ dành cho máy tính");
+} else {
+  alert("dmm");
+  
 }

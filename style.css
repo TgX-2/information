@@ -39,13 +39,14 @@ ul {
     max-width: 1200px; 
     margin: auto;
     padding: 10px;
-
+    transition: 0.3s;
     /* background-color: white; */
     backdrop-filter: blur(20px); 
     -webkit-backdrop-filter: blur(10px);
 }
 
 li {
+    transition: 0.3s;
     text-decoration: none;
     border-radius: 15px;
 }
@@ -63,17 +64,18 @@ li {
     font-weight: bold;
     backdrop-filter: blur(50px); 
     -webkit-backdrop-filter: blur(10px); 
+    transition: 0.5s;
 }
 
 
 button:hover {
+    transition: 0.5s;
     background-color: transparent;
     color : white;
     border-radius: 15px;
 }
 
 .page {
-    
     width: 100%; 
     max-width: 1200px; 
     height: 100%; 
@@ -82,6 +84,8 @@ button:hover {
     margin-top: 50px;
     border-radius: 15px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+
+    background-color: transparent;
     backdrop-filter: blur(20px); 
     -webkit-backdrop-filter: blur(10px);
 }
@@ -90,14 +94,12 @@ button:hover {
     display: block;
 }
 
+
 .container {
     display: flex;
     width: 100%;
     height: 100%;
-    /* background-color: white; */
     border-radius: 15px;
-    backdrop-filter: blur(20px); /* Làm mờ nền phía sau khung */
-    -webkit-backdrop-filter: blur(10px); /* Hỗ trợ cho trình duyệt WebKit */
 }
 
 .content {
@@ -431,4 +433,10 @@ button:hover {
 .icon svg {
     fill: currentColor;
     display: block;
+}
+
+
+.information {
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
 }

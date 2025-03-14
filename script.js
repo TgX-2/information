@@ -22,6 +22,10 @@ function showPage(pageId) {
 
     var direction = selectedPageIndex > currentPageIndex ? 'left' : 'right';
 
+    // Thêm transition cho mượt
+    currentPage.style.transition = 'transform 0.5s ease, opacity 0.5s ease';
+    selectedPage.style.transition = 'transform 0.5s ease, opacity 0.5s ease';
+
     if (direction === 'left') {
         currentPage.style.transform = 'translateX(-10%)';
     } else {
@@ -32,21 +36,21 @@ function showPage(pageId) {
     setTimeout(() => {
         currentPage.classList.remove('active');
 
-    if (direction === 'left') {
-          selectedPage.style.transform = 'translateX(10%)';
-    } else {
-          selectedPage.style.transform = 'translateX(-10%)';
-    }
-    selectedPage.classList.add('active');
-    selectedPage.style.opacity = '0';
+        if (direction === 'left') {
+            selectedPage.style.transform = 'translateX(10%)';
+        } else {
+            selectedPage.style.transform = 'translateX(-10%)';
+        }
+        selectedPage.style.opacity = '0';
+        selectedPage.classList.add('active');
 
-    setTimeout(() => {
-          selectedPage.style.transform = 'translateX(0)';
-          selectedPage.style.opacity = '1';
-    }, 50); 
-
+        setTimeout(() => {
+            selectedPage.style.transform = 'translateX(0)';
+            selectedPage.style.opacity = '1';
+        }, 50);
     }, 500);
 }
+
 
 function isMobile() {
   const regex = /Mobi|Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i;
@@ -56,3 +60,9 @@ function isMobile() {
 if (isMobile()) {
   alert("Trang này chỉ dành cho máy tính! Hãy quay lại khi đã xem bằng máy tính.");
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    setTimeout(() => {
+        document.querySelector(".information").style.opacity = "1";
+    }, 3000);
+});

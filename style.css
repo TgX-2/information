@@ -442,6 +442,34 @@ button:hover {
 }
 
 
-#page3 p {
-    color: white;
+.blogcontainer {
+    display: grid;
+    place-items: center;
+
+    background-color: transparent;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius : 10px;
+    backdrop-filter: blur(50px); 
+    -webkit-backdrop-filter: blur(10px); 
+    transition: 0.5s;
+}
+
+.blogcontainer:hover {
+    transition: 0.5s;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.blogcontainer a {
+    text-align: center;
+    text-decoration: none;
+    transition: 1s;
+    color: rgb(97, 94, 94);
+}
+
+.blogcontainer:hover a {
+    transition: 1s;
+    color : rgb(0, 0, 0);
 }

@@ -179,6 +179,7 @@ button:hover {
     object-fit: fixed;
 }
 
+
 .stats-lower {
     text-align: left;
     font-weight: 100;
@@ -191,6 +192,17 @@ button:hover {
     text-align: center;
     margin: 20px 100px 50px 100px;
 }
+
+.content-container, .content-mid, .content-bot {
+    transition: 0.5s;
+    padding: 10px;
+}
+
+.content-container:hover, .content-mid:hover, .content-bot:hover {
+    transition: 0.5s;
+    padding: 20px;
+}
+
 
 .content-container {
     background-color: transparent;

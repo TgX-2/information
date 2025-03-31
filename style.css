@@ -485,3 +485,86 @@ button:hover {
     transition: 1s;
     color : rgb(0, 0, 0);
 }
+
+.card-container {
+    display: flex;
+    gap: 20px;
+    backdrop-filter: blur(20px); 
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.card {
+    width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: 0.5s;
+
+}
+
+.card:hover {
+    transition: 0.5s;
+    background: white;
+}
+
+.card-img {
+    background: #a8e6cf;
+    width: 500px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-img img {
+    object-fit: cover; 
+    width: 100%;
+    height: 100%;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.label {
+    align-self: flex-end; /* Căn label sang phải */
+    background: #bbb;
+    color: white;
+    font-size: 12px;
+    padding: 3px 8px;
+    border-radius: 5px;
+}
+
+h3 {
+    margin: 10px 0 5px;
+}
+
+p {
+    color: #555;
+    font-size: 14px;
+}
+
+.card-button {
+    width: 90%;
+    background: linear-gradient(to right, #6a85b6, #bac8e0);
+    color: white;
+    border : none;
+    border-radius: 15px;
+    padding: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.5s;
+
+    position: relative;
+    bottom: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+
+}
+
+.card-button:hover {
+    background: linear-gradient(to right, #5a75a6, #a8b8d0);
+    border-radius: 25px;
+    transition: 0.5s;
+
+}
